@@ -2,16 +2,22 @@ version: "3.8"
 
 services:
   project-zomboid:
+    build:
+      context: .
+      dockerfile: Dockerfile
     container_name: pzserver
     image: pepecitron/projectzomboid-server
     restart: unless-stopped
     environment:
       SERVER_ADMIN_PASSWORD: "pzadmin"
       SERVER_PASSWORD: "secretpassword"
+      ADMIN_USERNAME: superuser
+      UDP_PORT: "16262"
     ports:
       - "8766:8766/udp"
       - "8767:8767/udp"
       - "16261:16261/udp"
+      - "16262:16262/udp"
     volumes:
       - ./data/server-file:/data/server-file
       - ./data/config:/data/config
