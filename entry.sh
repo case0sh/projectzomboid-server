@@ -49,6 +49,19 @@ then
   echo "RCONPort=${RCON_PORT}" >> ${server_ini}
   echo "RCONPassword=${RCON_PASSWORD}" >> ${server_ini}
   echo "MaxPlayers=${SERVER_MAX_PLAYER}" >> ${server_ini}
+  echo "WorkshopItems=2619072426;2392709985;2487022075;2503622437;2732804047;2946221823;2004998206;2544353492;2904920097;2625625421;2592358528;2282429356;2778576730;2732804047;2950902979">> ${server_ini}
+  echo "MaxPlayers=${SERVER_MAX_PLAYER}" >> ${server_ini}
+  echo "PVP=false" >> ${server_ini}
+  echo "AutoCreateUserInWhiteList=true" >> ${server_ini}
+  echo "Default=979223735" >> ${server_ini}
+  echo "ResetID=979223735" >> ${server_ini}
+  echo "Mods=NestedContainer01" >> ${server_ini}
+  echo "MinutesPerPage=0.05" >> ${server_ini}
+  echo "ServerPlayerID=655759532" >> ${server_ini}
+  echo "BloodSplatLifespanDays=5" >> ${server_ini}
+  echo "RemovePlayerCorpsesOnCorpseRemoval=false" >> ${server_ini}
+  echo "TrashDeleteAll=true" >> ${server_ini}
+  echo "MapRemotePlayerVisibility=3" >> ${server_ini}
 fi
 
 chown -R pzombie:pzombie /data/config/
