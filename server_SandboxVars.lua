@@ -1,69 +1,380 @@
 SandboxVars = {
     VERSION = 5,
+    -- Changing this sets the "Population Multiplier" advanced option. Default=Normal
+    -- 1 = Insane
+    -- 2 = Very High
+    -- 3 = High
+    -- 4 = Normal
+    -- 5 = Low
     Zombies = 4,
+    -- Default=Urban Focused
+    -- 1 = Urban Focused
     Distribution = 1,
+    -- Default=1 Hour
+    -- 1 = 15 Minutes
+    -- 2 = 30 Minutes
+    -- 3 = 1 Hour
+    -- 4 = 2 Hours
+    -- 5 = 3 Hours
+    -- 6 = 4 Hours
+    -- 7 = 5 Hours
+    -- 8 = 6 Hours
+    -- 9 = 7 Hours
+    -- 10 = 8 Hours
+    -- 11 = 9 Hours
+    -- 12 = 10 Hours
+    -- 13 = 11 Hours
+    -- 14 = 12 Hours
+    -- 15 = 13 Hours
+    -- 16 = 14 Hours
+    -- 17 = 15 Hours
+    -- 18 = 16 Hours
+    -- 19 = 17 Hours
+    -- 20 = 18 Hours
+    -- 21 = 19 Hours
+    -- 22 = 20 Hours
+    -- 23 = 21 Hours
+    -- 24 = 22 Hours
+    -- 25 = 23 Hours
     DayLength = 3,
     StartYear = 1,
+    -- Default=July
+    -- 1 = January
+    -- 2 = February
+    -- 3 = March
+    -- 4 = April
+    -- 5 = May
+    -- 6 = June
+    -- 7 = July
+    -- 8 = August
+    -- 9 = September
+    -- 10 = October
+    -- 11 = November
     StartMonth = 5,
     StartDay = 1,
+    -- Default=9 AM
+    -- 1 = 7 AM
+    -- 2 = 9 AM
+    -- 3 = 12 PM
+    -- 4 = 2 PM
+    -- 5 = 5 PM
+    -- 6 = 9 PM
+    -- 7 = 12 AM
+    -- 8 = 2 AM
     StartTime = 2,
+    -- Default=0-30 Days
+    -- 1 = Instant
+    -- 2 = 0-30 Days
+    -- 3 = 0-2 Months
+    -- 4 = 0-6 Months
+    -- 5 = 0-1 Year
+    -- 6 = 0-5 Years
+    -- 7 = 2-6 Months
     WaterShut = 2,
+    -- Default=0-30 Days
+    -- 1 = Instant
+    -- 2 = 0-30 Days
+    -- 3 = 0-2 Months
+    -- 4 = 0-6 Months
+    -- 5 = 0-1 Year
+    -- 6 = 0-5 Years
+    -- 7 = 2-6 Months
     ElecShut = 2,
+    -- Minimum=-1 Maximum=2147483647 Default=14
     WaterShutModifier = 14,
+    -- Minimum=-1 Maximum=2147483647 Default=14
     ElecShutModifier = 14,
+    -- Default=Rare
+    -- 1 = None (not recommended)
+    -- 2 = Insanely Rare
+    -- 3 = Extremely Rare
+    -- 4 = Rare
+    -- 5 = Normal
+    -- 6 = Common
     FoodLoot = 4,
+    -- Default=Rare
+    -- 1 = None (not recommended)
+    -- 2 = Insanely Rare
+    -- 3 = Extremely Rare
+    -- 4 = Rare
+    -- 5 = Normal
+    -- 6 = Common
     CannedFoodLoot = 4,
+    -- Default=Rare
+    -- 1 = None (not recommended)
+    -- 2 = Insanely Rare
+    -- 3 = Extremely Rare
+    -- 4 = Rare
+    -- 5 = Normal
+    -- 6 = Common
     LiteratureLoot = 4,
+    -- Seeds, Nails, Saws, Fishing Rods, various tools, etc... Default=Rare
+    -- 1 = None (not recommended)
+    -- 2 = Insanely Rare
+    -- 3 = Extremely Rare
+    -- 4 = Rare
+    -- 5 = Normal
+    -- 6 = Common
     SurvivalGearsLoot = 4,
+    -- Default=Rare
+    -- 1 = None (not recommended)
+    -- 2 = Insanely Rare
+    -- 3 = Extremely Rare
+    -- 4 = Rare
+    -- 5 = Normal
+    -- 6 = Common
     MedicalLoot = 4,
+    -- Default=Rare
+    -- 1 = None (not recommended)
+    -- 2 = Insanely Rare
+    -- 3 = Extremely Rare
+    -- 4 = Rare
+    -- 5 = Normal
+    -- 6 = Common
     WeaponLoot = 4,
+    -- Default=Rare
+    -- 1 = None (not recommended)
+    -- 2 = Insanely Rare
+    -- 3 = Extremely Rare
+    -- 4 = Rare
+    -- 5 = Normal
+    -- 6 = Common
     RangedWeaponLoot = 4,
+    -- Default=Rare
+    -- 1 = None (not recommended)
+    -- 2 = Insanely Rare
+    -- 3 = Extremely Rare
+    -- 4 = Rare
+    -- 5 = Normal
+    -- 6 = Common
     AmmoLoot = 4,
+    -- Default=Rare
+    -- 1 = None (not recommended)
+    -- 2 = Insanely Rare
+    -- 3 = Extremely Rare
+    -- 4 = Rare
+    -- 5 = Normal
+    -- 6 = Common
     MechanicsLoot = 4,
+    -- Everything else. Also affects foraging for all items in Town/Road zones. Default=Rare
+    -- 1 = None (not recommended)
+    -- 2 = Insanely Rare
+    -- 3 = Extremely Rare
+    -- 4 = Rare
+    -- 5 = Normal
+    -- 6 = Common
     OtherLoot = 4,
+    -- Controls the global temperature. Default=Normal
+    -- 1 = Very Cold
+    -- 2 = Cold
+    -- 3 = Normal
+    -- 4 = Hot
     Temperature = 3,
+    -- Controls how often it rains. Default=Normal
+    -- 1 = Very Dry
+    -- 2 = Dry
+    -- 3 = Normal
+    -- 4 = Rainy
     Rain = 3,
+    -- Number of days until 100% growth. Default=Normal (100 Days)
+    -- 1 = Very Fast (20 Days)
+    -- 2 = Fast (50 Days)
+    -- 3 = Normal (100 Days)
+    -- 4 = Slow (200 Days)
     ErosionSpeed = 3,
+    -- Number of days until 100% growth. -1 means no growth. Zero means use the Erosion Speed option. Maximum 36,500 (100 years). Minimum=-1 Maximum=36500 Default=0
     ErosionDays = 0,
+    -- Modifies the base XP gain from actions by this number. Minimum=0.00 Maximum=1000.00 Default=1.00
     XpMultiplier = 1.0,
+    -- Determines if the XP multiplier affects passively levelled skills eg. Fitness and Strength.
     XpMultiplierAffectsPassive = false,
+    -- Use this to multiply or reduce engine general loudness. Minimum=0.00 Maximum=100.00 Default=1.00
     ZombieAttractionMultiplier = 1.0,
+    -- Governs whether cars are locked, need keys to start etc.
     VehicleEasyUse = false,
+    -- Controls the speed of plant growth. Default=Normal
+    -- 1 = Very Fast
+    -- 2 = Fast
+    -- 3 = Normal
+    -- 4 = Slow
     Farming = 3,
+    -- Controls the time it takes for food to break down in a composter. Default=2 Weeks
+    -- 1 = 1 Week
+    -- 2 = 2 Weeks
+    -- 3 = 3 Weeks
+    -- 4 = 4 Weeks
+    -- 5 = 6 Weeks
+    -- 6 = 8 Weeks
+    -- 7 = 10 Weeks
     CompostTime = 2,
+    -- How fast character's hunger, thirst and fatigue will decrease. Default=Normal
+    -- 1 = Very Fast
+    -- 2 = Fast
+    -- 3 = Normal
+    -- 4 = Slow
     StatsDecrease = 3,
+    -- Controls the abundance of fish and general forage. Default=Normal
+    -- 1 = Very Poor
+    -- 2 = Poor
+    -- 3 = Normal
+    -- 4 = Abundant
     NatureAbundance = 3,
+    -- Default=Sometimes
+    -- 1 = Never
+    -- 2 = Extremely Rare
+    -- 3 = Rare
+    -- 4 = Sometimes
+    -- 5 = Often
     Alarm = 2,
+    -- How frequently homes and buildings will be discovered locked Default=Very Often
+    -- 1 = Never
+    -- 2 = Extremely Rare
+    -- 3 = Rare
+    -- 4 = Sometimes
+    -- 5 = Often
     LockedHouses = 6,
-    StarterKit = false,
+    -- Spawn with chips, water bottle, school bag, baseball bat and a hammer.
+    StarterKit = true,
+    -- Nutritional value of food affects the player's condition.
     Nutrition = true,
+    -- Define how fast the food will spoil inside or outside fridge. Default=Normal
+    -- 1 = Very Fast
+    -- 2 = Fast
+    -- 3 = Normal
+    -- 4 = Slow
     FoodRotSpeed = 3,
+    -- Define how much a fridge will be effective. Default=Normal
+    -- 1 = Very Low
+    -- 2 = Low
+    -- 3 = Normal
+    -- 4 = High
     FridgeFactor = 3,
+    -- Items will respawn in already-looted containers in towns and trailer parks. Items will not respawn in player-made containers. Default=None
+    -- 1 = None
+    -- 2 = Every Day
+    -- 3 = Every Week
+    -- 4 = Every Month
     LootRespawn = 1,
+    -- When > 0, loot will not respawn in zones that have been visited within this number of in-game hours. Minimum=0 Maximum=2147483647 Default=0
     SeenHoursPreventLootRespawn = 0,
+    -- A comma-separated list of item types that will be removed after HoursForWorldItemRemoval hours.
     WorldItemRemovalList = "Base.Hat,Base.Glasses,Base.Maggots",
+    -- Number of hours since an item was dropped on the ground before it is removed.  Items are removed the next time that part of the map is loaded.  Zero means items are not removed. Minimum=0.00 Maximum=2147483647.00 Default=24.00
     HoursForWorldItemRemoval = 24.0,
+    -- If true, any items *not* in WorldItemRemovalList will be removed.
     ItemRemovalListBlacklistToggle = false,
+    -- This will affect starting world erosion and food spoilage. Default=0
+    -- 1 = 0
+    -- 2 = 1
+    -- 3 = 2
+    -- 4 = 3
+    -- 5 = 4
+    -- 6 = 5
+    -- 7 = 6
+    -- 8 = 7
+    -- 9 = 8
+    -- 10 = 9
+    -- 11 = 10
+    -- 12 = 11
     TimeSinceApo = 1,
+    -- Will influence how much water the plant will lose per day and their ability to avoid disease. Default=Normal
+    -- 1 = Very High
+    -- 2 = High
+    -- 3 = Normal
+    -- 4 = Low
     PlantResilience = 3,
+    -- Controls the yield of plants when harvested. Default=Normal
+    -- 1 = Very Poor
+    -- 2 = Poor
+    -- 3 = Normal
+    -- 4 = Abundant
     PlantAbundance = 3,
+    -- Recovery from being tired from performing actions Default=Normal
+    -- 1 = Very Fast
+    -- 2 = Fast
+    -- 3 = Normal
+    -- 4 = Slow
     EndRegen = 3,
+    -- How regularly helicopters pass over the event zone. Default=Once
+    -- 1 = Never
+    -- 2 = Once
+    -- 3 = Sometimes
     Helicopter = 1,
+    -- How often zombie attracting metagame events like distant gunshots will occur. Default=Sometimes
+    -- 1 = Never
+    -- 2 = Sometimes
     MetaEvent = 2,
+    -- Governs night-time metagame events during the player's sleep. Default=Never
+    -- 1 = Never
+    -- 2 = Sometimes
     SleepingEvent = 1,
+    -- Increase/decrease the chance of electrical generators spawning on the map. Default=Sometimes
+    -- 1 = Extremely Rare
+    -- 2 = Rare
+    -- 3 = Sometimes
+    -- 4 = Often
     GeneratorSpawning = 3,
+    -- How much fuel is consumed per in-game hour. Minimum=0.00 Maximum=100.00 Default=1.00
     GeneratorFuelConsumption = 1.0,
+    -- Increase/decrease probability of discovering randomized safe houses on the map: either burnt out, containing loot stashes, dead survivor bodies etc. Default=Rare
+    -- 1 = Never
+    -- 2 = Extremely Rare
+    -- 3 = Rare
+    -- 4 = Sometimes
+    -- 5 = Often
     SurvivorHouseChance = 3,
+    -- Default=Rare
+    -- 1 = Never
+    -- 2 = Extremely Rare
+    -- 3 = Rare
+    -- 4 = Sometimes
+    -- 5 = Often
     VehicleStoryChance = 3,
+    -- Default=Rare
+    -- 1 = Never
+    -- 2 = Extremely Rare
+    -- 3 = Rare
+    -- 4 = Sometimes
+    -- 5 = Often
     ZoneStoryChance = 3,
+    -- Impacts on how often a looted map will have annotations marked on it by a deceased survivor. Default=Sometimes
+    -- 1 = Never
+    -- 2 = Extremely Rare
+    -- 3 = Rare
+    -- 4 = Sometimes
+    -- 5 = Often
     AnnotatedMapChance = 4,
+    -- Adds free points during character creation. Minimum=-100 Maximum=100 Default=0
     CharacterFreePoints = 0,
+    -- Gives player-built constructions extra hit points so they are more resistant to zombie damage. Default=Normal
+    -- 1 = Very Low
+    -- 2 = Low
+    -- 3 = Normal
+    -- 4 = High
     ConstructionBonusPoints = 3,
+    -- Governs the ambient lighting at night. Default=Normal
+    -- 1 = Pitch Black
+    -- 2 = Dark
+    -- 3 = Normal
     NightDarkness = 3,
+    -- Governs the time from dusk to dawn. Default=Normal
+    -- 1 = Always Night
+    -- 2 = Long
+    -- 3 = Normal
+    -- 4 = Short
     NightLength = 3,
+    -- Increase and decrease the impact injuries have on your body, and their healing time. Default=Normal
+    -- 1 = Low
+    -- 2 = Normal
     InjurySeverity = 2,
+    -- Enable or disable broken limbs when survivors receive injuries from impacts, zombie damage and falls.
     BoneFracture = true,
+    -- How long before zombie bodies disappear. Minimum=-1.00 Maximum=2147483647.00 Default=216.00
     HoursForCorpseRemoval = 216.0,
+    -- Governs impact that nearby decaying bodies has on the player's health and emotions. Default=Normal
+    -- 1 = None
+    -- 2 = Low
+    -- 3 = Normal
     DecayingCorpseHealthImpact = 3,
     -- How much blood is sprayed on floor and walls. Default=Normal
     -- 1 = None
@@ -111,7 +422,7 @@ SandboxVars = {
     -- Governs the chances of finding vehicles with gas in the tank. Default=Low
     -- 1 = Low
     -- 2 = Normal
-    ChanceHasGas = 1,
+    ChanceHasGas = 2,
     -- Governs how full gas tanks will be in discovered cars. Default=Low
     -- 1 = Very Low
     -- 2 = Low
@@ -166,7 +477,7 @@ SandboxVars = {
     -- 5 = Often
     CarAlarm = 2,
     -- Enable or disable player getting damage from being in a car accident.
-    PlayerDamageFromCrash = false,
+    PlayerDamageFromCrash = true,
     -- How many in-game hours before a wailing siren shuts off. Minimum=0.00 Maximum=168.00 Default=0.00
     SirenShutoffHours = 0.0,
     --  Governs whether player can discover a car that has been maintained and cared for after the infection struck. Default=Low
@@ -288,7 +599,7 @@ SandboxVars = {
         RespawnHours = 72.0,
         -- The number of hours that a chunk must be unseen before zombies may respawn in it. Minimum=0.00 Maximum=8760.00 Default=16.00
         RespawnUnseenHours = 16.0,
- The fraction of a cell's desired population that may respawn every RespawnHours. Minimum=0.00 Maximum=1.00 Default=0.10
+        -- The fraction of a cell's desired population that may respawn every RespawnHours. Minimum=0.00 Maximum=1.00 Default=0.10
         RespawnMultiplier = 0.1,
         -- The number of hours that must pass before zombies migrate to empty parts of the same cell. If zero, migration is disabled. Minimum=0.00 Maximum=8760.00 Default=12.00
         RedistributeHours = 12.0,
@@ -302,5 +613,81 @@ SandboxVars = {
         RallyGroupSeparation = 15,
         -- How close members of a group stay to the group's leader. Minimum=1 Maximum=10 Default=3
         RallyGroupRadius = 3,
+    },
+    FancyHandwork = {
+        -- Minimum=0 Maximum=11 Default=3
+        ExperiencedAim = 3,
+        -- Minimum=0.01 Maximum=60.00 Default=1.00
+        TurnDelaySec = 1.0,
+        DisableTurn = 2,
+        TurnBehavior = 2,
+        HideDoorProgressBar = false,
+        HideVehicleWalkProgressBar = false,
+    },
+    BrutalHandwork = {
+        DualWieldMelee = false,
+        EnableUnarmed = true,
+        AlwaysUnarmed = false,
+    },
+    FWOWorkingTreadmill = {
+        -- Minimum=0.00 Maximum=100.00 Default=1.00
+        StrengthXPMultiply = 1.0,
+        -- Minimum=0.00 Maximum=100.00 Default=1.00
+        SprintingXPMultiply = 1.0,
+        TreadmillDropBags = false,
+        BenchpressDropBags = false,
+        BenchTreadKeepBagsOn = false,
+    },
+    FWOFitness = {
+        InitialPerkBonus = true,
+        currentExerciseRegularityBonus = true,
+        -- Minimum=0 Maximum=100 Default=15
+        currentExerciseOffset = 15,
+        -- Minimum=0.01 Maximum=100.00 Default=12.00
+        currentExerciseRate = 12.0,
+        -- Minimum=0.00 Maximum=100.00 Default=6.00
+        AverageExerciseRegularityBonus = 6.0,
+        -- Minimum=0.00 Maximum=100.00 Default=0.30
+        LevelBonus = 0.3,
+        SpaceOutExercise = true,
+        -- Minimum=0.00 Maximum=100.00 Default=0.90
+        SpaceOutExerciseNegative = 0.9,
+        -- Minimum=0.00 Maximum=100.00 Default=1.05
+        SpaceOutExercisePositive = 1.05,
+        RestedBonus = true,
+        -- Minimum=0.00 Maximum=10.00 Default=0.90
+        RestedBonusNegative = 0.9,
+        -- Minimum=0.00 Maximum=10.00 Default=1.05
+        RestedBonusPositive = 1.05,
+        -- Minimum=0.01 Maximum=10.00 Default=1.00
+        XPMultiplier = 1.0,
+        -- Minimum=0.00 Maximum=10.00 Default=1.00
+        BoredomMultiplier = 1.0,
+        -- Minimum=0.00 Maximum=10.00 Default=1.00
+        UnhappynessMultiplier = 1.0,
+        KeepBagsOn = false,
+    },
+    MIR = {
+        SkipItems = "",
+        SkipSkills = "Mechanics;Aiming",
+        SkipFixers = "",
+    },
+    SkillRecoveryJournal = {
+        -- Minimum=1 Maximum=100 Default=100
+        RecoveryPercentage = 100,
+        -- Minimum=0.00 Maximum=1000.00 Default=1.00
+        TranscribeSpeed = 1.0,
+        -- Minimum=0.00 Maximum=1000.00 Default=1.00
+        ReadTimeSpeed = 1.0,
+        RecoverProfessionAndTraitsBonuses = false,
+        TranscribeTVXP = false,
+        RecoverPassiveSkills = false,
+        RecoverCombatSkills = true,
+        RecoverFirearmSkills = true,
+        RecoverCraftingSkills = true,
+        RecoverSurvivalistSkills = true,
+        RecoverAgilitySkills = true,
+        RecoverRecipes = true,
+        RecoveryJournalUsed = false,
     },
 }

@@ -38,5 +38,9 @@ EXPOSE ${RCON_PORT}
 
 VOLUME ["/data/server-file", "/data/config"]
 
+
+COPY server_SandboxVars.lua /server_SandboxVars.lua
+COPY server_spawnregions.lua /server_spawnregions.lua
+COPY server.ini /server.ini
 COPY entry.sh /data/scripts/entry.sh
 CMD ["bash", "/data/scripts/entry.sh"]
