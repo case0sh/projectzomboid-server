@@ -32,9 +32,9 @@ then
 fi
 su pzombie -s /bin/sh -p -c "ln -s /data/config /home/pzombie/Zomboid"
 mkdir -p /data/config/Server
-cp /server_SandboxVars.lua /data/config/Serverserver_SandboxVars.lua
-cp /server_spawnregions.lua /data/config/Serverserver_spawnregions.lua
-cp /server.ini /data/config/Serverserver.ini
+cp /server_SandboxVars.lua /data/config/Server/server_SandboxVars.lua
+cp /server_spawnregions.lua /data/config/Server/server_spawnregions.lua
+cp /server.ini /data/config/Server/server.ini
 
 # Apply server connfiguration
 # server_ini="/data/config/Server/${SERVER_NAME}.ini"
